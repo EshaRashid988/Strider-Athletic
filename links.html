@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strider Athletic</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f7f7;
+      color: #111;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    main {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    a.simple-link {
+      display: inline-block;
+      color: #111;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    a.simple-link:hover {
+      text-decoration: underline;
+      color: #0066cc;
+    }
+
+    a.button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      background: #fff;
+      text-decoration: none;
+      color: #111;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    a.button-link:hover {
+      background: #111;
+      color: white;
+      border-color: #111;
+    }
+
+    .banner {
+      width: 400%;
+      max-width: 900px;
+      margin: 50px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .banner img {
+      width: 5%;
+      height: auto;
+      display: block;
+    }
+
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255,255,255,0.85);
+      padding: 20px 40px;
+      border-radius: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #111;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    STRIDER ATHLETIC
+  </header>
+
+  <main>
+    <h2>Welcome to Strider Athletic</h2>
+    <p>Click the link below to visit our official website:</p>
+
+    <!-- Simple text link -->
+    <a class="simple-link" href="https://www.striderathletic.com.pk" target="_blank" rel="noopener noreferrer">
+      www.striderathletic.com.pk
+    </a>
+
+    <br><br>
+
+    <!-- Styled URL Button -->
+    <a class="button-link" href="https://www.striderathletic.com.pk" target="_blank" rel="noopener noreferrer">
+      Visit www.striderathletic.com.pk
+    </a>
+
+    <br><br><br>
+
+    <!-- Full clickable banner -->
+    <a href="https://www.striderathletic.com" target="_self" rel="noopener noreferrer" style="text-decoration:none;">
+      <div class="banner" style="position:relative;">
+        <img src="Screenshot 2025-11-06 092336.png" alt="Strider Athletic Banner" />
+        <div class="banner-text">Visit www.striderathletic.com.pk</div>
+      </div>
+    </a>
+  </main>
+
+  <footer>
+    &copy; 2025 Strider Athletic. All rights reserved.
+  </footer>
+</body>
+</html>
