@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Strider Athletic</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Strider Athletic — premium sportswear, fashionwear and accessories." />
+  <style>
+    :root{
+      --accent:#ff6b35;
+      --dark:#0f1724;
+      --muted:#6b7280;
+      --bg:#0b1020;
+      --card:#0f1726;
+      --glass: rgba(255,255,255,0.03);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background: linear-gradient(180deg,#071023 0%, #071124 60%); color:#e6eef8;}
+    a{color:var(--accent);text-decoration:none}
+    header{position:sticky;top:0;backdrop-filter: blur(6px);background:linear-gradient(180deg, rgba(7,16,35,0.6), rgba(7,16,35,0.4));border-bottom:1px solid rgba(255,255,255,0.03);z-index:40}
+    .container{max-width:1100px;margin:0 auto;padding:28px 22px}
+
+    /* navbar */
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:30px;font-weight:700}
+    .brand .logo{width:5px;height:5px;border-radius:10px;background:linear-gradient(135deg,var(--accent), #ff9a66);display:flex;align-items:center;justify-content:center;font-weight:800;color:#061021}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;align-items:center}
+    .logo-img{
+     width:50px;
+     height: auto;
+     display: auto;
+     margin-top: 10px;
+     margin-left:0;
+     border-radius: 20px;
+     }
+    .cta{background:linear-gradient(90deg,var(--accent),white);padding:10px 14px;border-radius:10px;font-weight:600}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:60px 0}
+    .hero h1{font-size:36px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .shop-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .hero-card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .price{font-weight:700}
+    /* products */
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:var(--accent);color:#061021;font-weight:700}
+    /*Feature Product*/
+  .feature-img{
+   width:150px;
+     height: auto;
+     display: grid;
+     margin-top: 10px;
+     margin-left:0;
+     border-radius: 10px;
+     }
+     .product-name { 
+     color: white ! important;
+     font-family: 'times new roman', times new roman;
+     font-weight: bold ;
+     font-size: 18px;
+     text-align: left;
+     margin-top: 8px;
+     }
+    /* gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:10px}
+
+    /* order form */
+    .form-wrap{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.04)}
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:inherit}
+    textarea{min-height:100px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    footer{padding:28px 0;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      nav ul{display:none}
+    }
+    @media (max-width:520px){
+      .gallery{grid-template-columns:1fr}
+      .row{grid-template-columns:1fr}
+      .brand span{display:none}
+      .hero h1{font-size:28px}
+    }
+
+    /* tiny utilities */
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+    .flex{display:flex;gap:10px;align-items:center}
+    .badge{background:rgba(255,255,255,0.04);padding:6px 8px;border-radius:8px;font-weight:700}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"><img src="Screenshot 2025-11-06 092336.png"alt="logo" class="logo-img"></div>
+        <div>
+          <div style="font-weight:800">     Strider Athletic</div>
+          <div class="small muted">       Performance gear — apperal</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex">
+        <div class="small muted">Call: +923194159918</div>
+        <a class="cta" href="#order">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>Strider Athletic-Best Quality And Fast Delivery</h1>
+        <p class="muted"> performance apparel and gear — crafted for athletes who push limits. Unique designs, limited drops.</p>
+
+        <div class="section" id="products">
+          
+          <div class="grid" id="productGrid">
+           <h2>Featured Product</h2>
+            <img src="Screenshot 2025-11-06 093137.png" alt="Featured Product" class="feature-img">
+          <p class="product-name">Soccer Uniform</p>
+          </div>
+        <div style="height:8px"></div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn" onclick="selectProduct(${p.id})">Select</button>
+          <a href="#gallery" class="small muted">View</a>
+        </div>
+          <div class="product">
+           <img src="Screenshot 2025-11-08 105920.png" alt="Featured Product" class="feature-img">
+          <p class="product-name">Custom Hero Band And Sleeve</p>
+          </div>
+        <div style="height:8px"></div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn" onclick="selectProduct(${p.id})">Select</button>
+          <a href="#gallery" class="small muted">View</a>
+        </div>
+          <div class="product">
+           <img src="Screenshot 2025-11-08 115320.png" alt="Featured Product" class="feature-img">
+          <p class="product-name">Fitness Bra & Leggie</p>
+          </div>
+          <div style="height:8px"></div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn" onclick="selectProduct(${p.id})">Select</button>
+          <a href="#gallery" class="small muted">View</a>
+        </div>
+         <div class="product">
+         <img src="Screenshot 2025-11-08 115258.png" alt="Featured Product" class="feature-img">
+           <p class="product-name">BaseBall Uniform</p>
+          </div>
+            <div style="height:8px"></div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn" onclick="selectProduct(${p.id})">Select</button>
+          <a href="#gallery" class="small muted">View</a>
+        </div> 
+          </div>
+        </div>
+
+        <div class="section" id="gallery">
+          <h2 style="margin:0 0 12px">Gallery</h2>
+          <div class="gallery" id="galleryGrid">
+            <img src="Screenshot 2025-11-06 100532.png" alt="gallery">
+            <img src="Screenshot 2025-11-06 100955.png" alt="gallery">
+            <img src="Screenshot 2025-11-06 101042.png" alt="gallery">
+            <img src="Screenshot 2025-11-06 101238.png" alt="gallery">
+            <img src="Screenshot 2025-11-06 101157.png" alt="gallery">
+            <img src="Screenshot 2025-11-06 101322.png" alt="gallery">
+            <img src="Screenshot 2025-11-08 115146.png" alt="gallery">
+            <img src="Screenshot 2025-11-08 115418.png" alt="gallery">
+          </div>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="hero-card">
+          <h3 style="margin:0 0 8px">Strider Athletic</h3>
+          <div class="small muted">Best Performance High Quality.</div>
+          <div style="margin:12px 0;display:flex;gap:10px;align-items:center">
+            <div class="badge">New</div>
+          </div>
+          <img src="Screenshot 2025-11-08 110851.png" alt="logo"style="width:100%;border-radius:8px;margin-bottom:12px">
+          <a class="btn" href="#order" style="display:block;text-align:center">Order this</a>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="form-wrap">
+          <h4 style="margin:0 0 8px">Quick size guide</h4>
+          <div class="small muted">Measure Any Uniforms length and compare with our size chart before ordering.</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ORDER FORM -->
+    <section class="section" id="order">
+      <h2>Place an Order</h2>
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
+        <div>
+          <form id="orderForm" class="form-wrap" onsubmit="return submitOrder(event)">
+            <label for="fullname">Full name</label>
+            <input id="fullname" name="fullname" required placeholder="e.g. Ahmed Khan">
+
+            <div class="row" style="margin-top:12px">
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" required placeholder="0300 1234567">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="example@mail.com">
+              </div>
+            </div>
+
+            <label for="product">Product</label>
+            <select id="product" name="product" required>
+              <option value="">-- choose product --</option>
+            </select>
+
+            <div class="row" style="margin-top:12px">
+              <div>
+                <label for="quantity">Quantity</label>
+                <input id="quantity" name="quantity" type="number" min="1" value="1" required>
+              </div>
+              <div>
+                <label for="size">Size / Variant</label>
+                <input id="size" name="size" placeholder="e.g. 9 (UK) / M / L">
+              </div>
+            </div>
+
+            <label for="address" style="margin-top:12px">Shipping address</label>
+            <textarea id="address" name="address" placeholder="Street, city, province" required></textarea>
+
+            <label for="notes" style="margin-top:12px">Notes / Instructions</label>
+            <textarea id="notes" name="notes" placeholder="Special instructions, gift wrap, etc."></textarea>
+
+            <div style="margin-top:12px;display:flex;gap:10px;align-items:center;">
+              <button class="btn" type="submit">Submit Order</button>
+              <div class="small muted">We will contact you on phone to confirm.</div>
+            </div>
+          </form>
+        </div>
+
+        <aside>
+          <div class="form-wrap">
+            <h3 style="margin:0 0 10px">Order summary</h3>
+            <div id="orderSummary" class="small muted">No items selected yet.</div>
+            <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+            <h4 style="margin:0 0 6px">Payment & Shipping</h4>
+            <div class="small muted">| Bank transfer | Westorn Union /Money Gram /Ria</div>
+            <div style="height:8px"></div>
+            <div class="small muted">Shipping within Pakistan — 15-20 business days</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px">
+        <div class="form-wrap">
+          <div class="small muted">Have a question? Send us a message.</div>
+          <label style="margin-top:12px">Your message</label>
+          <textarea placeholder="Write your message" id="contactMessage"></textarea>
+          <div style="height:8px"></div>
+          <button class="btn" onclick="sendMessage()">Send</button>
+        </div>
+        <aside class="form-wrap">
+          <h4 style="margin:0 0 6px">Store & Support</h4>
+          <div class="small muted">Phone: +92 3194159918</div>
+          <div class="small muted">Email: striderathletic@gmail.com</div>
+          <div style="height:6px"></div>
+          <div class="small muted">Address: Sialkot — Factory address</div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div class="small muted">© Strider Athletic — All rights reserved</div>
+      <div class="small muted">Designed & coded • Strider Athletic template</div>
+    </div>
+  </footer>
+    
+</body>
+</html>
